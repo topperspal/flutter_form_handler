@@ -88,7 +88,7 @@ void main() {
       expect(form.fields.password.value, password);
       expect(form.fields.password.error, null);
 
-      print(JsonEncoder.withIndent("  ").convert(form.toMap()));
+      print(const JsonEncoder.withIndent("  ").convert(form.toMap()));
       // print(form.values());
 
       await form.dispose();
